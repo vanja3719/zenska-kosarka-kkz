@@ -1,0 +1,154 @@
+/* Reset osnovnih stilova */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Opći stilovi */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f0f4;
+    color: #333;
+}
+
+/* Navigacija */
+/* Navigacija */
+nav {
+    background-color: #f737aa; /* Pozadina navigacije */
+    padding: 10px; /* Unutrašnji razmak navigacije */
+    text-align: center;
+}
+
+nav .logo {
+    font-size: 1.5em; /* Veličina fonta za logo */
+    margin-bottom:5px; /* Razmak ispod logoa */
+}
+
+nav ul {
+    list-style-type: none; /* Uklanja oznake s liste */
+    padding: 0; /* Uklanja padding */
+    margin: 0; /* Uklanja marginu */
+    display: flex; /* Raspoređuje stavke u red */
+    justify-content: center; /* Centriranje stavki */
+}
+
+nav ul li {
+    margin: 0 15px; /* Razmak između stavki */
+}
+
+nav ul li a {
+    text-decoration: none; /* Uklanja podvlačenje */
+    color: black; /* Boja teksta */
+    padding: 10px 20px; /* Unutrašnji razmak */
+    border: 1px solid transparent; /* Inicijalni okvir */
+    border-radius: 5px; /* Zaobljeni uglovi */
+    transition: background-color 0.3s, border-color 0.3s; /* Glatka promena pozadine i okvira */
+}
+
+nav ul li a:hover {
+    background-color: white; /* Boja pozadine pri hover-u */
+    border-color: #ccc; /* Boja okvira pri hover-u */
+}
+
+
+/* Naslovna stranica */
+header {
+    text-align: center;
+    padding: 3em 1em;
+    background-color: #ffb3d9;
+    color: #333;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+/* Sekcije */
+section {
+    padding: 2em 1em;
+    max-width: 800px;
+    margin: auto;
+}
+
+h2 {
+    color: #ff66b2;
+    margin-bottom: 0.5em;
+}
+
+.novost {
+    margin-bottom: 1em;
+    padding: 1em;
+    background-color: #fec7e2;
+    border-radius: 5px;
+    text-align: center; /* Centriraj tekst i slike unutar div-a */
+    margin-bottom: 20px; /* Razmak između novosti */
+}
+
+.novost img {
+    max-width: 50%; /* Promijenite ovu vrijednost po potrebi za smanjenje veličine */
+    height:120px ;    /* Održava proporcije slike */
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 1em;
+}
+
+form input, form textarea, form button {
+    padding: 0.5em;
+    margin-top: 0.5em;
+}
+
+form button {
+    background-color: #ff66b2;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 1em;
+    padding: 0.7em;
+}
+
+.liga-link {
+   font-size: 15px;
+    display: block; /* Svaki link će biti na novom redu */
+    margin-bottom: 5px; /* Razmak između liga */
+    color: rgb(255, 7, 255); /* Boja linka */
+    text-decoration: none; /* Bez podcrtavanja */
+}
+.liga-link:hover {
+    text-decoration: underline; /* Podcrtavanje kada se mišem pređe preko linka */
+}
+
+.liga-broj {
+    font-size: 16px; /* Manja veličina fonta za brojeve */
+    text-transform: lowercase; /* Pretvara tekst u mala slova */
+    font-weight: normal; /* Uklanja podebljanje */
+}
+
+ol {
+    padding-left: 20px; /* Razmak s lijeve strane za numeriranu listu */
+    font-weight: normal; /* Uklanja podebljanje za cijelu listu */
+    font-size: 12px; /* Manja veličina fonta za cijelu listu */
+}
+.liga-naslov {
+    color: #ff008c; /* Promijeni boju po želji */
+    margin-top: 20px; /* Razmak iznad naslova */
+    margin-bottom: 10px; /* Razmak ispod naslova */
+}
+
+.liga li {
+    margin-bottom: 5px; /* Razmak između klubova */
+}
+.logo-image {
+    display: block; /* Omogućava da slika bude u novom redu */
+    margin: 20px auto; /* Pomerite sliku niže i centrirajte je */
+    max-width: 100%; /* Ograničava širinu slike da ne prelazi širinu ekrana */
+    height:fit-content; /* Održava proporcije slike */
+}
